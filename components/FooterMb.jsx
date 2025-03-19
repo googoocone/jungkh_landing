@@ -98,7 +98,7 @@ export default function FooterMb() {
               </div>
             </div>
             <div className="text-center text-[18px] font-semibold">
-              <div>상담 후 저희를 선임하지 않으셔도 괜찮습니다</div>
+              <div>상담 후 선임하지 않으셔도 괜찮습니다</div>
               <div>전문 변호사와 확실하게 진단해보세요.</div>
             </div>
           </div>

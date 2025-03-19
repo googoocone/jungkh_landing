@@ -135,8 +135,8 @@ body {
 .swiper-button-next {
   position: absolute;
   top: var(--swiper-navigation-top-offset, 50%);
-  width: 55px;
-  height: 55px;
+  width: 55px !important;
+  height: 55px !important;
   margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
   z-index: 10;
   cursor: pointer;
