@@ -39,7 +39,7 @@ function getKoreanDateTime() {
     hour: "2-digit",
     minute: "2-digit",
     second: "2-digit",
-  };
+  } as const;
 
   return new Intl.DateTimeFormat("ko-KR", options)
     .format(now)
