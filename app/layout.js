@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import FooterMb from "../components/FooterMb";
+import TelBtn from "../components/Telbtn";
 
 // variable 대신 기본 className 사용
 const notoSansKR = Noto_Sans_KR({
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
       <body className={`${notoSansKR.className} antialiased`}>
         <Header />
         {children}
+        <TelBtn></TelBtn>
         <Footer />
         <FooterMb />
       </body>

@@ -190,7 +190,7 @@ body {
 .swiper-button-prev:after,
 .swiper-button-next:after {
   font-family: swiper-icons;
-  font-size: 22px;
+  font-size: 22px !important;
   text-transform: none !important;
   letter-spacing: 0;
   font-variant: initial;

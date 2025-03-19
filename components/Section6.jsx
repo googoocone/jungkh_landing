@@ -64,7 +64,7 @@ const Section6 = () => {
         <div className="w-[805px] h-[525px] relative mt-30">
           <div className="absolute w-full h-[112px] text-center text-[40px] text-white top-20">
             <h2>수임료 비교하고 결정하세요</h2>
-            <div className="w-[270px] h-[55px] mx-auto font-semibold bg-[#397bf4]">
+            <div className="w-[270px] h-[62px] mx-auto font-semibold bg-[#397bf4]">
               <Typewriter
                 className="font-semibold"
                 words={["합리적입니다"]}
