@@ -12,11 +12,11 @@ const fadeInFromLeft = {
 const Section2 = () => {
   return (
     <div className="w-full h-[620px] sm:h-[920px] bg-[#f3f6fc] flex flex-col items-center justify-center">
-      <div className="w-[200px] sm:w-full h-[52px] sm:h-[40px] text-[16px] sm:text-[24px] mb-[12px] sm:mb-[24px] flex items-center justify-center">
+      <div className="text-center w-[180px] sm:w-full h-[52px] sm:h-[40px] text-[16px] sm:text-[24px] mb-[12px] sm:mb-[24px] flex items-center justify-center">
         법인회생/파산을 진행하신 의뢰인들에게 물었습니다
       </div>
 
-      <div className="w-full h-[130px] text-[24px] sm:text-[40px]  mb-16 flex flex-col items-center justify-center">
+      <div className="w-full h-[130px] text-[24px] sm:text-[40px] mb-8 sm:mb-16 flex flex-col items-center justify-center">
         <div className="w-full text-center">
           <strong>법인회생/파산</strong>을, 하기 전
         </div>
