@@ -96,20 +96,20 @@ const Section8 = () => {
               />
             </Link>
           </SwiperSlide>
-          {/* <SwiperSlide className="w-[460px] h-[240px] rounded-lg ">
+          <SwiperSlide className="w-[460px] h-[240px] rounded-lg ">
             <Link
-              href="https://www.youtube.com/watch?v=IcsX5flw-sA"
+              href="https://www.youtube.com/watch?v=GV_jIwkB1n4"
               target="_blank"
             >
               <Image
-                src="/youtube3.svg"
-                alt="Slide 3"
+                src="/youtube4.svg"
+                alt="Slide 4"
                 width={900}
                 height={310}
                 className="object-cover rounded-lg "
               />{" "}
             </Link>
-          </SwiperSlide> */}
+          </SwiperSlide>
         </Swiper>
         <div className="swiper-button-prev sm:absolute w-[24px] h-[24px] top-1/2 left-4 z-20 transform -translate-y-1/2 bg-gray-200 rounded-full p-2 cursor-pointer "></div>
         {/* 다음 버튼 */}
@@ -171,15 +171,15 @@ const Section8 = () => {
               />
             </Link>
           </SwiperSlide>
-          {/* <SwiperSlide className="w-[460px] h-[240px] rounded-lg ">
+          <SwiperSlide className="w-[460px] h-[240px] rounded-lg ">
             <Image
-              src="/youtube3.svg"
-              alt="Slide 3"
+              src="/youtube4.svg"
+              alt="Slide 4"
               width={900}
               height={310}
               className="object-cover rounded-lg "
             />
-          </SwiperSlide> */}
+          </SwiperSlide>
         </Swiper>
       </div>
 
