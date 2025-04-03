@@ -18,9 +18,6 @@ export async function POST(req: Request) {
     // },
   });
 
-  console.log(process.env.SMTP_PASSWORD);
-  console.log(process.env.SMTP_USER);
-  console.log(process.env.SMTP_PORT);
 
   const mailOptions = {
     from: process.env.SMTP_USER,
