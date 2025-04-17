@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import FooterMb from "../components/FooterMb";
 import TelBtn from "../components/Telbtn";
+import Script from "next/script";
 
 // variable 대신 기본 className 사용
 const notoSansKR = Noto_Sans_KR({
@@ -22,10 +23,26 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        {/* BORAWARE LOG SCRIPT */}
+        <Script
+          id="boraware-init"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `var protect_id = 'i116';`,
+          }}
+        />
+        <Script
+          src="//script.boraware.kr/protect_script_v2.js"
+          strategy="beforeInteractive"
+          async
+        />
+        {/* END OF BORAWARE LOG SCRIPT */}
+      </head>
       <body className={`${notoSansKR.className} antialiased`}>
         <Header />
         {children}
-        <TelBtn></TelBtn>
+        <TelBtn />
         <Footer />
         <FooterMb />
       </body>
