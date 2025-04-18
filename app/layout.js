@@ -39,6 +39,7 @@ export default function RootLayout({ children }) {
         />
         {/* END OF BORAWARE LOG SCRIPT */}
       </head>
+      x``
       <body className={`${notoSansKR.className} antialiased`}>
         <Header />
         {children}

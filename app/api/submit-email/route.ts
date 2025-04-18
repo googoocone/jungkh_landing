@@ -18,16 +18,17 @@ export async function POST(req: Request) {
     // },
   });
 
-
   const mailOptions = {
     from: process.env.SMTP_USER,
     to: process.env.ALERT_EMAIL, // 알림 받을 이메일 주소
     subject: "새로운 상담 신청 알림",
     text: `새로운 상담 신청이 접수되었습니다.
     
-이름: ${name}
-연락처: ${phone}
-상담 분야: ${field}`,
+    이름: ${name}
+    연락처: ${phone}
+    상담 분야: ${field}
+    변호사 : 정경현 변호사님
+    `,
   };
 
   try {
