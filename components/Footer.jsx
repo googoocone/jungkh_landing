@@ -12,6 +12,8 @@ export default function Footer() {
     e.preventDefault();
     setIsLoading(true); // 로딩 시작
 
+    window.dispatchEvent(new Event("consultClicked"));
+
     try {
       const response = await fetch("/api/submit-consultation", {
         method: "POST",
