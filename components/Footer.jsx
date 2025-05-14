@@ -27,14 +27,11 @@ export default function Footer() {
       return;
     }
 
-    // 입력된 정보를 상태에 저장 (모달에 전달하거나 직접 접근)
-    // setDataToConfirm({ name, phone, field }); // dataToConfirm 상태를 사용할 경우
-
-    // 상담 클릭 이벤트 디스패치 (API 호출 전에 발생)
     window.dispatchEvent(new Event("consultClicked"));
 
-    // 확인 모달 열기
-    setShowConfirmationModal(true);
+    // // 확인 모달 열기
+    // setShowConfirmationModal(true);
+    confirmAndSubmit();
   };
 
   // **새로운 함수: 모달에서 확인 후 실제 제출 처리**
@@ -192,7 +189,7 @@ export default function Footer() {
         <div className="fixed inset-0 bg-black/70 bg-opacity-50 flex items-center justify-center z-[1000]">
           <div className="w-[400px] h-[240px] bg-white p-6 rounded-lg shadow-xl max-w-sm mx-auto">
             <h2 className="text-2xl font-bold mb-4 text-gray-800">
-            입력 정보 확인
+              입력 정보 확인
             </h2>
             <div className="mt-10">
               <p className="mb-1 text-gray-700">

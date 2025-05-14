@@ -31,8 +31,10 @@ export default function FooterMb() {
     window.dispatchEvent(new Event("consultClicked"));
 
     // 확인 모달 열기
-    setShowConfirmationModal(true);
+    // setShowConfirmationModal(true);
     // 여기서 폼을 바로 닫지 않고, 확인 후 제출 성공 시 닫도록 변경
+
+    confirmAndSubmit();
   };
 
   // **새로운 함수: 모달에서 확인 후 실제 제출 처리**
@@ -163,7 +165,6 @@ export default function FooterMb() {
             </div>
 
             <form onSubmit={handleSubmit} className="space-y-3">
-
               <div className="flex items-center bg-[#395180] rounded-xl p-2">
                 <label className="w-30 text-white text-lg font-semibold">
                   이름
@@ -238,37 +239,37 @@ export default function FooterMb() {
       {/* **확인 모달** */}
       {showConfirmationModal && (
         <div className="fixed inset-0 bg-black/70 bg-opacity-50 flex items-center justify-center z-[1000]">
-        <div className="w-[400px] h-[240px] bg-white p-6 rounded-lg shadow-xl max-w-sm mx-auto">
-          <h2 className="text-2xl font-bold mb-4 text-gray-800">
-            입력 정보 확인
-          </h2>
-          
-          <div className="mt-10">
-            <p className="mb-1 text-gray-700">
-              <strong>성함:</strong> {name} {/* 기존 state 값 사용 */}
-            </p>
-            <p className="mb-4 text-gray-700">
-              <strong>연락처:</strong> {phone} {/* 기존 state 값 사용 */}
-            </p>
-          </div>
-          <div className="flex justify-around gap-4 my-10">
-            <button
-              onClick={confirmAndSubmit} // 확인 버튼 클릭 시 실제 제출 함수 호출
-              className="w-[165px] bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 disabled:opacity-50"
-              disabled={isLoading} // 제출 처리 중에는 확인 버튼 비활성화
-            >
-              {isLoading ? "확인 중..." : "확인"}
-            </button>
-            <button
-              onClick={cancelConfirmation} // 취소 버튼 클릭 시 모달 닫기 함수 호출
-              className="w-[165px] bg-gray-300 text-gray-800 px-4 py-2 rounded-md hover:bg-gray-400"
-              disabled={isLoading} // 제출 처리 중에는 취소 버튼 비활성화
-            >
-              취소
-            </button>
+          <div className="w-[400px] h-[240px] bg-white p-6 rounded-lg shadow-xl max-w-sm mx-auto">
+            <h2 className="text-2xl font-bold mb-4 text-gray-800">
+              입력 정보 확인
+            </h2>
+
+            <div className="mt-10">
+              <p className="mb-1 text-gray-700">
+                <strong>성함:</strong> {name} {/* 기존 state 값 사용 */}
+              </p>
+              <p className="mb-4 text-gray-700">
+                <strong>연락처:</strong> {phone} {/* 기존 state 값 사용 */}
+              </p>
+            </div>
+            <div className="flex justify-around gap-4 my-10">
+              <button
+                onClick={confirmAndSubmit} // 확인 버튼 클릭 시 실제 제출 함수 호출
+                className="w-[165px] bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 disabled:opacity-50"
+                disabled={isLoading} // 제출 처리 중에는 확인 버튼 비활성화
+              >
+                {isLoading ? "확인 중..." : "확인"}
+              </button>
+              <button
+                onClick={cancelConfirmation} // 취소 버튼 클릭 시 모달 닫기 함수 호출
+                className="w-[165px] bg-gray-300 text-gray-800 px-4 py-2 rounded-md hover:bg-gray-400"
+                disabled={isLoading} // 제출 처리 중에는 취소 버튼 비활성화
+              >
+                취소
+              </button>
+            </div>
           </div>
         </div>
-      </div>
       )}
     </>
   );
