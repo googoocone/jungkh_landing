@@ -52,7 +52,7 @@ export default function Footer() {
       });
 
       // 두 번째 API 호출
-      const mailer = await fetch("api/submit-email", {
+      await fetch("api/submit-email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
