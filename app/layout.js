@@ -38,6 +38,10 @@ export default function RootLayout({ children }) {
           async
         />
         {/* END OF BORAWARE LOG SCRIPT */}
+        <meta
+          name="naver-site-verification"
+          content="1ab552d0abb9c39d631342beef77f990c16cdbbe"
+        />
       </head>
       <body className={`${notoSansKR.className} antialiased`}>
         <Header />
