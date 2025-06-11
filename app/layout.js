@@ -24,9 +24,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* Facebook Pixel Code */}
+        {/* Meta Pixel Code (New) */}
         <Script
-          id="facebook-pixel"
+          id="meta-pixel"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
             t.src=v;s=b.getElementsByTagName(e)[0];
             s.parentNode.insertBefore(t,s)}(window, document,'script',
             'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', '2438649306499850');
+            fbq('init', '1386277535976961');
             fbq('track', 'PageView');
             `,
           }}
@@ -48,10 +48,10 @@ export default function RootLayout({ children }) {
             height="1"
             width="1"
             style={{ display: "none" }}
-            src="https://www.facebook.com/tr?id=2438649306499850&ev=PageView&noscript=1"
+            src="https://www.facebook.com/tr?id=1386277535976961&ev=PageView&noscript=1"
           />
         </noscript>
-        {/* End Facebook Pixel Code */}
+        {/* End Meta Pixel Code */}
 
         {/* BORAWARE LOG SCRIPT */}
         <Script
@@ -71,7 +71,6 @@ export default function RootLayout({ children }) {
           name="naver-site-verification"
           content="1ab552d0abb9c39d631342beef77f990c16cdbbe"
         />
-        {/* 요청하신 페이스북 도메인 인증 코드 */}
         <meta
           name="facebook-domain-verification"
           content="e0seuijyha6mqjl7qp5dinsdr0p9i7"
