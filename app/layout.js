@@ -71,6 +71,11 @@ export default function RootLayout({ children }) {
           name="naver-site-verification"
           content="1ab552d0abb9c39d631342beef77f990c16cdbbe"
         />
+        {/* 요청하신 페이스북 도메인 인증 코드 */}
+        <meta
+          name="facebook-domain-verification"
+          content="e0seuijyha6mqjl7qp5dinsdr0p9i7"
+        />
       </head>
       <body className={`${notoSansKR.className} antialiased`}>
         <Header />
