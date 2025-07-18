@@ -86,10 +86,8 @@ export default function FooterMb() {
     } catch (error) {
       console.error("Error:", error);
       alert("상담 신청 중 오류가 발생했습니다: " + error.message);
-      // 오류 발생 시 로딩 상태만 해제하고 폼은 열어두어 사용자가 수정할 수 있도록 함
     } finally {
-      setIsLoading(false); // 로딩 종료
-      // 모달은 confirmAndSubmit 시작 시 닫았으므로 여기서 다시 닫을 필요 없음
+      setIsLoading(false);
     }
   };
 
@@ -250,10 +248,10 @@ export default function FooterMb() {
 
             <div className="mt-10">
               <p className="mb-1 text-gray-700">
-                <strong>성함:</strong> {name} {/* 기존 state 값 사용 */}
+                <strong>성함:</strong> {name}
               </p>
               <p className="mb-4 text-gray-700">
-                <strong>연락처:</strong> {phone} {/* 기존 state 값 사용 */}
+                <strong>연락처:</strong> {phone}
               </p>
             </div>
             <div className="flex justify-around gap-4 my-10">
